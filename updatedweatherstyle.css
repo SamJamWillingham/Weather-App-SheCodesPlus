@@ -9,6 +9,10 @@ div.container {
   max-width: 960px;
   margin: 15px auto;
 }
+ul {
+  list-style: none;
+  padding: 10px;
+}
 h1 {
   font-family: "Lobster", cursive;
 }

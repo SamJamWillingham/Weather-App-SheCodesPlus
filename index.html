@@ -52,24 +52,35 @@
         </div>
       </div>
       <div class="row">
-          <div class="col-4"></div>
-        <div class="col-4" id="currentWeather" class="shadow-sm p-3 mb-5 bg-white rounded">
-               <p>
-                    <i class="fas fa-sun" id="current"></i> <br />
-                </p> 
-            <h1 id="current-city">Charlotte</h1>
-                <h2><span id="temperature">29</span> <a href="#" id="celsuisLink">°C</a> | <a href="#" id="fahrenheitLink">°F</a>
-                </h2>
-                <h3 id="currentDate">
-                    Fri, Aug 7
-                </h3>
+        <div class="col-2"></div>
+        <div class="col-md-5" id="currentWeather" class="shadow-sm p-3 mb-5 bg-white rounded">
+              <h1 id="current-city">
+                Charlotte
+              </h1>
+          <ul>
+                <li>
+                  <span id="temperature">29</span> <a href="#" id="celsuisLink">°C</a> | <a href="#" id="fahrenheitLink">°F</a>
+                </li>
+                <li id="currentDate">
+                  Fri, Aug 7
+                </li>
+              </ul> 
         </div>
-        <div class="col-4">
-            <p>
-                <em><span class="description">Sunny</span></em> <br />
-<span id="humidity-percentage">Humidity: 67%</span><br />
-                    <span id="windSpeed">Wind: 2mph</span></em><br />
-            </p>
+        <div class="col-md-5">
+            <ul>
+              <li>
+                <i class="fas fa-sun" id="current"></i>
+              </li>
+              <li>
+                <em><span class="description">Sunny</span></em>
+              </li>
+              <li>
+               <span id="humidity-percentage">Humidity: 67%</span> 
+              </li>
+              <li>
+                <span id="windSpeed">Wind: 2mph</span></em>
+              </li>
+            </ul>
         </div>
       </div>
     <div class="row justify-content-center" id="forecast">
