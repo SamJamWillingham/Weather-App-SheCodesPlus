@@ -1,0 +1,82 @@
+.container {
+  display: block;
+  margin: 40px;
+  max-width: 900px;
+  background-color: #ecfbfc;
+  padding: 30px;
+  font-family: "Bellota", monospace;
+  border-radius: 20px;
+  background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+}
+
+h1 {
+  display: inline;
+  text-align: center;
+  font-size: 30px;
+  max-width: 700px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+h3,
+p {
+  font-size: 18px;
+}
+
+#currentWeather {
+  display: block;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  max-width: 340px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#dadJoke {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  max-width: 340px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#forecast {
+  text-align: center;
+  margin: 20;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.fas {
+  font-size: 40px;
+  color: #25557d;
+}
+.btn {
+  background-color: #25557d;
+  border: none;
+  margin: 5px;
+  height: 40px;
+}
+.fa-search-location {
+  font-size: 20px;
+  color: white;
+}
+#current {
+  font-size: 80px;
+}
+.findLocation {
+  margin: 5px;
+  font-size: 20px;
+  background-color: #25557d;
+  border: none;
+  height: 40px;
+}

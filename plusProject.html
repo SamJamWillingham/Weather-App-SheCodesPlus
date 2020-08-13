@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="weatherStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/bdd64fd9c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hey Dad</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 id="currentDate">
+            Fri, Aug 7
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-7">
+          <h1>Hey Dad, what's the weather?</h1>
+        </div>
+        <div class="col-5">
+          <form class="form-inline" id="city-form">
+            <label class="sr-only" for="inlineFormInputName2">
+              Change City
+            </label>
+            <input type="text" class="form-control mb-2 mr-sm-2" autofocus=on autocomplete="off" id="inlineFormInputName2"
+              placeholder="Helsinki" />
+            <button type="submit" class="btn btn-primary mb-2" id="search-button">
+              <i class="fas fa-search-location"></i>
+            </button>
+            <button class="btn btn-primary mb-2" id="find-location"><i class="far fa-compass"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2"> </div>
+        <div
+          class="col-4"
+          id="currentWeather"
+          class="shadow-sm p-3 mb-5 bg-white rounded"
+        >
+          <h1 id="current-city">Charlotte</h1>
+          <h2><span id="temperature">29</span> <a href="#" id="celsuisLink">°C</a> | <a href="#" id="fahrenheitLink">°F</a></h2>
+          <p><em><span class="description">Sunny</span></em></p>
+          <p>
+            <i class="fas fa-sun" id="current"></i> <br />
+            <span id="humidity-percentage">Humidity: 67%</span><br />
+            <span id="windSpeed">Wind: 2mph</span></em><br />
+          </p>
+        </div>
+        <div class="col-4" id="dadJoke">
+          <span class="changeDadJoke"><h3>How do weather reporters greet each other?</h3>
+          <p><em>With heat waves!</em></p></span>
+          <img src="dadLuke.png" alt="Dad Avatar" width="200" />
+        </div>
+        <div class="col-2"> </div>
+      </div>
+      <div class="row justify-content-center" id="forecast">
+        <div class="col-2">
+          <i class="fas fa-sun"></i>
+          <br />
+          Monday
+        </div>
+        <div class="col-2">
+          <i class="fas fa-sun"></i>
+          <br />Tuesday
+        </div>
+        <div class="col-2">
+          <i class="fas fa-cloud-sun"></i>
+          <br />Wednesday
+        </div>
+        <div class="col-2">
+          <i class="fas fa-cloud-showers-heavy"></i>
+          <br />Thursday
+        </div>
+        <div class="col-2">
+          <i class="fas fa-cloud-showers-heavy"></i>
+          <br />
+          Friday
+        </div>
+      </div>
+    </div>
+    <script src="js-data-types.js"></script>
+  </body>
+</html>
