@@ -1,0 +1,49 @@
+div.container {
+  background-color: #e2cccc;
+  background-image: url("sketchvalley-quarentine.png");
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  max-width: 960px;
+  margin: 15px auto;
+}
+h1 {
+  font-family: "Lobster", cursive;
+}
+.brand {
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1.5px 1.5px 0 #000;
+  font-size: 60px;
+  padding: 10px;
+}
+
+#current-city {
+  font-family: "Lobster", cursive;
+}
+h2,
+h3,
+p {
+  font-family: "Baloo Tamma 2", cursive;
+}
+#forecast {
+  padding: 20px;
+}
+.fas {
+  font-size: 40px;
+}
+
+.fa-search-location {
+  font-size: 20px;
+}
+#current {
+  font-size: 80px;
+}
+footer {
+  display: block;
+  margin: 0 auto;
+  font-family: "Baloo Tamma 2", cursive;
+  font-size: 14px;
+}
