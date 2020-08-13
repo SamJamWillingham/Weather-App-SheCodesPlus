@@ -1,15 +1,18 @@
-div.container {
+.weather-app {
   background-color: #e2cccc;
   background-image: url("sketchvalley-quarentine.png");
-  min-height: 100%;
-  background-position: center;
+  min-height: 760px;
+  max-width: 700px;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 20px;
-  max-width: 960px;
-  margin: 15px auto;
+
+  margin: 20px auto;
 }
 ul {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   list-style: none;
   padding: 10px;
 }
@@ -20,8 +23,8 @@ h1 {
   color: #ffffff;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1.5px 1.5px 0 #000;
-  font-size: 60px;
-  padding: 10px;
+  font-size: 70px;
+  padding: 15px 0px 15px 96px;
 }
 
 #current-city {
