@@ -2,7 +2,7 @@
   background-color: #e2cccc;
   background-image: url("sketchvalley-quarentine.png");
   min-height: 760px;
-  max-width: 700px;
+  max-width: 660px;
   background-position: bottom;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -10,11 +10,12 @@
   margin: 20px auto;
 }
 ul {
-  display: block;
   margin: 0 auto;
-  text-align: center;
   list-style: none;
   padding: 10px;
+}
+li {
+  padding: 0;
 }
 h1 {
   font-family: "Lobster", cursive;
@@ -26,9 +27,7 @@ h1 {
   font-size: 70px;
   padding: 25px 0px 15px 96px;
 }
-.col-md-6-auto {
-  text-align: center;
-}
+
 #current-city {
   font-family: "Lobster", cursive;
 }
@@ -36,6 +35,13 @@ h2,
 h3,
 p {
   font-family: "Baloo Tamma 2", cursive;
+}
+.overview {
+  padding-top: 80px;
+  font-family: "Baloo Tamma 2", cursive;
+}
+.description {
+  font-size: 30px;
 }
 #forecast {
   padding: 20px;
@@ -51,10 +57,10 @@ p {
   font-size: 20px;
 }
 #current {
-  font-size: 80px;
+  font-size: 70px;
 }
 #temperature {
-  font-size: 60px;
+  font-size: 70px;
 }
 footer {
   display: block;
