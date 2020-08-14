@@ -70,7 +70,7 @@ function localWeather(response) {
   let currentCity = document.querySelector("#current-city");
   currentCity.innerHTML = `${response.data.name}`;
 
-  let description = document.querySelector("p .description");
+  let description = document.querySelector("li .description");
   let updateDescription = response.data.weather[0].description;
   description.innerHTML = updateDescription;
 
