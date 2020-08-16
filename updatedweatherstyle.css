@@ -34,8 +34,15 @@ h1 {
   font-size: 54px;
   padding: 0 0 0 60px;
 }
+#extra-column {
+  padding: 0;
+}
+#currentWeather {
+  padding: 0;
+}
 #current-city {
   font-family: "Lobster", cursive;
+  margin: 0;
 }
 h2,
 h3,
@@ -45,6 +52,11 @@ p {
 }
 .overview {
   font-family: "Baloo Tamma 2", cursive;
+}
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
 }
 .description {
   font-size: 30px;
@@ -62,11 +74,12 @@ p {
 .fa-search-location {
   font-size: 20px;
 }
-#current {
-  font-size: 70px;
+#current-icon {
+  padding: 0;
+  position: relative;
 }
 #temperature {
-  font-size: 70px;
+  font-size: 64px;
 }
 footer {
   text-align: center;

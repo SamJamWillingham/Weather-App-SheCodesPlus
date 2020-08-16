@@ -44,7 +44,7 @@
     </div>
 </div>
       <div class="row overview">
-        <div class="col-2"></div>
+        <div class="col-2" id="extra-column"></div>
         <div class="col-5" id="currentWeather" class="shadow-sm p-3 mb-5 bg-white rounded">
          <h1 id="current-city">
         Charlotte
@@ -53,8 +53,19 @@
         Fri, Aug 7
       </p>      
           <ul>
-                <li> <i class="fas fa-sun" id="current"></i>
-                  <span id="temperature">29°</span> <a href="#" id="celsuisLink">C</a> | <a href="#" id="fahrenheitLink">F</a>
+                <li>
+                  <img 
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
+                  width= 80px 
+                  alt="sun" 
+                  id="current-icon">
+                  <span id="temperature">
+                    29
+                  </span>
+                  <span class="units">
+                    <a href="#" id="celsuisLink">°C</a>
+                     | <a href="#" id="fahrenheitLink">°F</a>
+                    </span>
                 </li>
               </ul> 
         </div>

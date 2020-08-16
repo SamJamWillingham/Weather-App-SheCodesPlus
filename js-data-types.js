@@ -80,7 +80,12 @@ function localWeather(response) {
   let humidity = document.querySelector("#humidity-percentage");
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
 
-  //changeDadJoke();
+  let iconElement = document.querySelector("li #current-icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function showPosition(position) {
@@ -104,20 +109,3 @@ locationButton.addEventListener("click", currentPosition);
 
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", search);
-
-//Change Dad Joke
-
-//function changeDadJoke(response) {
-//let searchInput = document.querySelector("#inlineFormInputName2");
-//let searchCity = `${searchInput.value}`;
-//let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather?";
-//let apiKey = "f8789029e0a5277fb2e5a66c29f35e2c";
-//let apiUrl = `${apiEndpoint}q=${searchCity}&appid=${apiKey}&units=metric`;
-//axios.get(apiUrl);
-//let temperature = Math.round(response.data.main.temp);
-//let dadJoke = document.querySelector(".changeDadJoke");
-
-//if (temperature >= 30) {
-//dadJoke.innerHTML = `What’s the difference between weather and climate?< br/><em>You can’t weather a tree, but you can climate!</em>`;
-//}
-//}
