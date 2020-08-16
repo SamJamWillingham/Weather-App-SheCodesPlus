@@ -59,7 +59,8 @@ p {
   top: -32px;
 }
 #description-more-info {
-  padding-top: 64px;
+  padding-top: 60px;
+  padding-left: 0;
 }
 .description {
   font-size: 30px;
@@ -96,4 +97,12 @@ footer {
   text-align: center;
   font-family: "Baloo Tamma 2", cursive;
   font-size: 14px;
+}
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+  color: black;
 }

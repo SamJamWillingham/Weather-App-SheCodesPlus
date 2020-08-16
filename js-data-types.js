@@ -1,14 +1,19 @@
 //converting C and F next to temperature
 function convertToFahrenheit(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (temperatureElement * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsuisTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  celsuisLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
 }
-function convertToCelsuis() {
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 29;
+
+function convertToCelsuis(event) {
+  event.preventDefault();
+  temperatureElement.innerHTML = Math.round(celsuisTemperature);
 }
+
+let celsuisTemperature = null;
+let temperatureElement = document.querySelector("#temperature");
 
 let fahrenheitLink = document.querySelector("#fahrenheitLink");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
@@ -59,7 +64,6 @@ function search(event) {
   let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather?";
   let apiKey = "f8789029e0a5277fb2e5a66c29f35e2c";
   let apiUrl = `${apiEndpoint}q=${searchCity}&appid=${apiKey}&units=metric`;
-
   axios.get(apiUrl).then(localWeather);
 }
 
@@ -88,6 +92,7 @@ function localWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  celsuisTemperature = Math.round(response.data.main.temp);
 }
 
 function showPosition(position) {
@@ -111,3 +116,14 @@ locationButton.addEventListener("click", currentPosition);
 
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", search);
+
+function firstUpdate() {
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather?";
+  let apiKey = "f8789029e0a5277fb2e5a66c29f35e2c";
+  let city = "Charlotte";
+  let apiUrl = `${apiEndpoint}q=${city}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(localWeather);
+}
+
+firstUpdate();
