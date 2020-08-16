@@ -25,7 +25,7 @@ h1 {
   width: 100%;
   border-radius: 20px 20px 0 0;
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .brand {
   color: #f6f5f6;
@@ -58,17 +58,28 @@ p {
   font-size: 16px;
   top: -32px;
 }
+#description-more-info {
+  padding-top: 64px;
+}
 .description {
   font-size: 30px;
 }
 #forecast {
   padding: 20px;
 }
+#inlineFormInputName2 {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
 .btn {
   margin-right: 5px;
+  background-color: #88d5fc;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.fas {
-  font-size: 40px;
+.fas,
+.far {
+  font-size: 20px;
+  color: #343434;
 }
 
 .fa-search-location {

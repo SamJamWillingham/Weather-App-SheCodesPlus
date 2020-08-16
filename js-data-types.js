@@ -1,7 +1,9 @@
 //converting C and F next to temperature
-function convertToFahrenheit() {
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (temperatureElement * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 87;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 function convertToCelsuis() {
   let temperatureElement = document.querySelector("#temperature");
