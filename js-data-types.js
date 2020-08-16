@@ -10,6 +10,8 @@ function convertToFahrenheit(event) {
 function convertToCelsuis(event) {
   event.preventDefault();
   temperatureElement.innerHTML = Math.round(celsuisTemperature);
+  celsuisLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 let celsuisTemperature = null;
