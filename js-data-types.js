@@ -143,9 +143,9 @@ function displayForecast(response) {
     alt="sun" 
     class="forecast-icon">
     <br />
-    <p><strong>${Math.round(forecast.main.temp_max)}°</strong> ${Math.round(
-      forecast.main.temp_min
-    )}°
+    <p><span class="maxTemp">${Math.round(
+      forecast.main.temp_max
+    )}°</span> ${Math.round(forecast.main.temp_min)}°
     </p>
 </div>`;
   }
