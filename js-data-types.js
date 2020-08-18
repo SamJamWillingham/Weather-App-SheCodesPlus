@@ -52,6 +52,7 @@ currentDate.innerHTML = `${day}, ${month} ${date}, ${hour}:${minutes}`;
 
 //time display in forecast (API)
 function formatTime(timestamp) {
+  let now = new Date(timestamp);
   let hours = now.getHours();
   let minutes = now.getMinutes();
   if (minutes < 10) {
